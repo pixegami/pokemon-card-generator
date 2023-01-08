@@ -5,32 +5,43 @@ import openai
 from retry import retry
 
 
-@retry(tries=3, delay=3.0)
-def get_completion(prompt: str, max_tokens: int = 128, n: int = 1):
+class OpenAIClient:
 
-    load_dotenv()
-    openai.api_key = os.getenv("OPENAI_API_KEY")
+    SINGLETON_CLIENT = None
 
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt=prompt,
-        max_tokens=max_tokens,
-        temperature=0.9,
-        n=n,
-    )
-    return response
+    @cached_property
+    def is_openai_enabled(self):
+        print("Checking for OpenAI API key...")
+        load_dotenv()
+        print(f"OPENAI_API_KEY: {os.getenv('OPENAI_API_KEY')}")
+        if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
+            # Print warning message in red.
+            print(
+                "\033[91m"
+                + "WARNING: OpenAI API key not found. OpenAI will not be used."
+                + "\033[0m"
+            )
+            return False
+        else:
+            return True
 
+    @retry(tries=3, delay=3.0)
+    def get_completion(self, prompt: str, max_tokens: int = 128, n: int = 1):
+        return "No OpenAI API key found."
+        load_dotenv()
+        openai.api_key = os.getenv("OPENAI_API_KEY")
 
-@cached_property
-def is_openai_enabled():
-    load_dotenv()
-    if os.getenv("OPENAI_API_KEY") is None:
-        # Print warning message in red.
-        print(
-            "\033[91m"
-            + "WARNING: OpenAI API key not found. OpenAI will not be used."
-            + "\033[0m"
+        response = openai.Completion.create(
+            model="text-davinci-003",
+            prompt=prompt,
+            max_tokens=max_tokens,
+            temperature=0.9,
+            n=n,
         )
-        return False
-    else:
-        return True
+        return response
+
+
+def gpt_client():
+    if OpenAIClient.SINGLETON_CLIENT is None:
+        OpenAIClient.SINGLETON_CLIENT = OpenAIClient()
+    return OpenAIClient.SINGLETON_CLIENT

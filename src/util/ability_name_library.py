@@ -4,7 +4,7 @@ import re
 import string
 from mechanics.element import Element
 from mechanics.ability import Ability
-from util.gpt_call import get_completion
+from util.gpt_call import gpt_client
 
 DEFAULT_PATH = "data/ability_names.json"
 
@@ -63,7 +63,7 @@ def generate_all_ability_names_to_file(path: str, elements: list[Element]) -> li
 def generate_ability_name(ability: Ability, n: int) -> list[str]:
     ability_names = []
     prompt = generate_ability_name_prompt(ability, n)
-    response = get_completion(prompt, max_tokens=512)
+    response = gpt_client().get_completion(prompt, max_tokens=512)
     common_delimters_regex = r"[\n\.\,\?\!\:\;]"
     response_text = response.choices[0].text
     ability_names = re.split(common_delimters_regex, response_text)

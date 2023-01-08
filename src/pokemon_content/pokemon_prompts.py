@@ -1,6 +1,6 @@
 import string
 from mechanics.card import Card
-from util.gpt_call import get_completion
+from util.gpt_call import gpt_client
 
 
 def get_visual_description(card: Card) -> str:
@@ -64,6 +64,9 @@ def get_full_subject_description(card: Card):
 
 def generate_card_name(card: Card, seen_names: set[str]) -> str:
 
+    if not gpt_client().is_openai_enabled:
+        return "Untitled Card"
+
     # Generate a name for the card.
     # additional_modifier = "(max 2 words), "
     if card.rarity.index == 0:
@@ -74,7 +77,7 @@ def generate_card_name(card: Card, seen_names: set[str]) -> str:
     prompt = f"Generate a unique, orignal, creative,{additional_modifier} {card.style.subject_type} name for a {get_visual_description(card)}"
     prompt += f" (without using the word {card.style.subject_type.lower()} or {card.element.name.lower()}):\n"
 
-    response = get_completion(prompt, max_tokens=256, n=5)
+    response = gpt_client().get_completion(prompt, max_tokens=256, n=5)
 
     potential_names = set()
     for potential_name in response.choices:
@@ -96,12 +99,15 @@ def generate_card_name(card: Card, seen_names: set[str]) -> str:
 
 def generate_desc(card: Card) -> str:
     # Generate a name for the monster.
-    prompt = f"Generate a short, original, creative Pokedex description for {card.name}, {get_visual_description(card)}. "
-    prompt += f"It has the following abilities: {', '.join([ability.name for ability in card.abilities])}. "
-    prompt += f"Be creative about its day-to-day life. "
-    prompt += f" (do not use the word {card.style.subject.lower()} or {card.element.name.lower()} or the ability names):\n"
+    if gpt_client().is_openai_enabled:
+        prompt = f"Generate a short, original, creative Pokedex description for {card.name}, {get_visual_description(card)}. "
+        prompt += f"It has the following abilities: {', '.join([ability.name for ability in card.abilities])}. "
+        prompt += f"Be creative about its day-to-day life. "
+        prompt += f" (do not use the word {card.style.subject.lower()} or {card.element.name.lower()} or the ability names):\n"
 
-    response = get_completion(prompt, max_tokens=256)
-    desc = response.choices[0].text
-    desc = desc.strip()
-    return desc
+        response = gpt_client().get_completion(prompt, max_tokens=256)
+        desc = response.choices[0].text
+        desc = desc.strip()
+        return desc
+    else:
+        return "No description available."

@@ -24,7 +24,7 @@ from pokemon_content.pokemon_prompts import (
     get_visual_description,
 )
 from util.ability_name_library import get_ability_name
-from util.gpt_call import is_openai_enabled
+from util.gpt_call import gpt_client
 
 
 @dataclass
@@ -80,7 +80,7 @@ class PokemonCollection(Collection):
         card.visual_description = get_visual_description(card)
 
         # Generate a name for the card.
-        if is_openai_enabled:
+        if gpt_client().is_openai_enabled:
             card.name = generate_card_name(card, self.card_names_seen)
             card.description = generate_desc(card)
 
