@@ -13,7 +13,6 @@ class OpenAIClient:
     def is_openai_enabled(self):
         print("Checking for OpenAI API key...")
         load_dotenv()
-        print(f"OPENAI_API_KEY: {os.getenv('OPENAI_API_KEY')}")
         if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
             # Print warning message in red.
             print(
@@ -27,7 +26,6 @@ class OpenAIClient:
 
     @retry(tries=3, delay=3.0)
     def get_completion(self, prompt: str, max_tokens: int = 128, n: int = 1):
-        return "No OpenAI API key found."
         load_dotenv()
         openai.api_key = os.getenv("OPENAI_API_KEY")
 
