@@ -136,7 +136,7 @@ python src/generate.py -e fire
 
 This will only generate cards for the `fire` element. Available elements are: `fire`, `water`, `grass`, `electric`, `psychic`, `neutral`.
 
-## Generate Cards of a Specific Create Type
+## Generate Cards of a Specific Creature Type
 
 You can also specify a specific creature type (subject) to generate cards for. This will override the default subject selection (which is random).
 
