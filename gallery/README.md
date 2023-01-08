@@ -2,6 +2,8 @@
 
 Here are some examples of Pokemon cards that have been generated using this tool.
 
+You can click on them to see the full sized version.
+
 |                                           |                                           |                                               |                                           |                                           |                                             |
 | ----------------------------------------- | ----------------------------------------- | --------------------------------------------- | ----------------------------------------- | ----------------------------------------- | ------------------------------------------- |
 | ![fawna](renders/016_fawna.png)           | ![buckrim](renders/017_buckrim.png)       | ![armogeld](renders/018_armogeld.png)         | ![flamo](renders/026_flamo.png)           | ![flarewing](renders/027_flarewing.png)   | ![ignizar](renders/028_ignizar.png)         |

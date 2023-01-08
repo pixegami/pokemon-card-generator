@@ -1,0 +1,4 @@
+pillow
+openai
+python-dotenv
+retry

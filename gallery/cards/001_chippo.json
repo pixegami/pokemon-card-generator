@@ -1,0 +1,27 @@
+{
+  "index": 1,
+  "name": "Chippo",
+  "description": "Compact and lively, Chippo is a delightful pokemon found mostly in small villages. Its energetic nature can be seen from its playful hop across the ground and its habit of chirping at the start of each day. It loves to tease other pokemon with its sharp beak, and its Slash and Nudge abilities make it a formidable foe. Chippo is always looking for adventure, and its bright feathers add a colorful joy to any area.",
+  "element": "Neutral",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 30,
+  "abilities": [
+    {
+      "name": "Slash",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    },
+    {
+      "name": "Nudge",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "Chippo::0 a chibi young neutral-type toucan pokemon, in a village environment, bright lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "001_chippo.png"
+}

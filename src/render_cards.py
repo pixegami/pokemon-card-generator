@@ -323,7 +323,7 @@ def main():
     argparser.add_argument(
         "--collection",
         help="File path to the collection to render",
-        default="samples/classic",
+        default="output/pokemon-classic",
     )
     collection_path = argparser.parse_args().collection
     render_cards(collection_path)

@@ -1,0 +1,27 @@
+{
+  "index": 2,
+  "name": "Sfyrinx",
+  "description": "Sfyrinx is an enigmatic pokemon, often seen in castle-like environments. Its ethereal purple cosmic armor gives it an otherworldly air, and its incredible psychic abilities give it a special connection with the universe. It is able to send out Psychic Surge to manipulate minds, and Synapse to create powerful forcefields of energy. During the day, Sfyrinx is often seen perched atop a grand spire, studying the stars and communing with the energies of the cosmos. At night, it patrols the grounds of its castle, protecting its inhabitants from harm with its formidable psychic powers.",
+  "element": "Psychic",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Psychic Surge",
+      "element": "Psychic",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    },
+    {
+      "name": "Synapse",
+      "element": "Psychic",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Sfyrinx::0 a dynamic psychic-type sphinx pokemon::1.8, wearing purple cosmic armor, in a castle environment, violet shadows, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "002_sfyrinx.png"
+}

@@ -1,0 +1,27 @@
+{
+  "index": 1,
+  "name": "Regalot",
+  "description": "Regalot is a majestic pokemon, framed in an ornate suit of armor that highlights its regal bearing. It can usually be seen in woods-like environments, where it spends its time lounging in the trees and stretching its graceful limbs. When threatened, Regalot will make use of its Whipwind and Sprout abilities, which create powerful yet elegant gusts of air and sprout beautiful vines to ward off enemies. It is a rare sight to behold, and will always strive to remain majestic and majestic.",
+  "element": "Grass",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Whipwind",
+      "element": "Grass",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 40
+    },
+    {
+      "name": "Sprout",
+      "element": "Grass",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Regalot::0 a rare grass-type pumpkin pokemon::1.8, wearing regal armor, in a woods environment, emerald bokeh lighting, anime sketch --niji --ar 3:2",
+  "image_file": "001_regalot.png"
+}
