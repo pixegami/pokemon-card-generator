@@ -33,3 +33,31 @@ class PokemonElements:
 
     def get_element_by_name(name: str) -> Element:
         return PokemonElements._ELEMENTS_BY_NAME[name.lower()]
+
+
+def get_resist(element: Element) -> Element:
+    if element == PokemonElements.FIRE:
+        return PokemonElements.GRASS
+    elif element == PokemonElements.WATER:
+        return PokemonElements.FIRE
+    elif element == PokemonElements.GRASS:
+        return PokemonElements.ELECTRIC
+    elif element == PokemonElements.ELECTRIC:
+        return PokemonElements.PSYCHIC
+    else:
+        return None
+
+
+def get_weakness(element: Element) -> Element:
+    if element == PokemonElements.FIRE:
+        return PokemonElements.WATER
+    elif element == PokemonElements.WATER:
+        return PokemonElements.ELECTRIC
+    elif element == PokemonElements.GRASS:
+        return PokemonElements.FIRE
+    elif element == PokemonElements.ELECTRIC:
+        return None
+    elif element == PokemonElements.NEUTRAL:
+        return PokemonElements.PSYCHIC
+    else:
+        return None

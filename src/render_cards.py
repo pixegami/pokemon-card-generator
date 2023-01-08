@@ -4,12 +4,16 @@ import os
 import pathlib
 from PIL import Image, ImageFont, ImageDraw
 
-from pokemon_content.pokemon_elements import PokemonElements
+from pokemon_content.pokemon_elements import PokemonElements, get_resist, get_weakness
 from pokemon_content.pokemon_rarity import PokemonRarity
 from mechanics.ability import Ability
 from mechanics.card import Card
+from mechanics.element import Element
+
 
 MONSTER_IMAGE_SCALE = 0.255
+MONSTER_IMAGE_SCALE_SQ = 0.355
+
 ABILITY_WIDTH = 370
 ABILITY_HEIGHT = 72
 ABILITY_COST_WIDTH = 76
@@ -17,6 +21,10 @@ ABILITY_COST_GAP = 12
 ELEMENT_SIZE = 30
 ABILITY_GAP = 4
 POWER_WIDTH = 64
+
+STATUS_Y_POSITION = 568
+STATUS_X_GAP = 82
+STATUS_SIZE = 20
 
 
 def render_cards(collection_path: str):
@@ -48,9 +56,15 @@ def render_card(card: Card, collection_path: str):
     if pathlib.Path(card_art_path).exists():
         canvas = Image.new("RGBA", card_image.size, (0, 0, 0, 0))
         card_art_image = Image.open(card_art_path)
+
+        if card_art_image.width == card_art_image.height:
+            rescale_factor = MONSTER_IMAGE_SCALE_SQ
+        else:
+            rescale_factor = MONSTER_IMAGE_SCALE
+
         resized_image_shape = (
-            int(card_art_image.size[0] * MONSTER_IMAGE_SCALE),
-            int(card_art_image.size[1] * MONSTER_IMAGE_SCALE),
+            int(card_art_image.size[0] * rescale_factor),
+            int(card_art_image.size[1] * rescale_factor),
         )
         card_art_image = card_art_image.resize(resized_image_shape)
 
@@ -129,6 +143,42 @@ def render_card(card: Card, collection_path: str):
             fill=(0, 0, 0),
             width=2,
         )
+
+    # Render the status of the card (weakness, resistance, etc.)
+    render_weakness_and_resist(card, card_image)
+
+    # Write the rarity of the Pokemon.
+    rarity_text_position = (58, 602)
+    rarity_font = ImageFont.truetype("resources/font/Cabin_Condensed-Regular.ttf", 18)
+    rarity_text = f"{card.rarity.name} {card.element.name}-type Card"
+    draw.text(
+        rarity_text_position,
+        rarity_text.title(),
+        font=rarity_font,
+        fill=(0, 0, 0),
+        anchor="lm",
+    )
+
+    # Write the rarity of the Pokemon.
+    rarity_symbol_position = (card_image.width - 64, 605)
+    symbol_font = ImageFont.truetype("resources/font/NotoSansSymbols2-Regular.ttf", 22)
+    rarity_symbols = ["⬤", "◆", "★"]
+    rarity_symbol_sizes = [10, 14, 22]
+
+    symbol_text = rarity_symbols[card.rarity.index]
+    symbol_font = ImageFont.truetype(
+        "resources/font/NotoSansSymbols2-Regular.ttf",
+        rarity_symbol_sizes[card.rarity.index],
+    )
+
+    draw.text(
+        rarity_symbol_position,
+        symbol_text,
+        font=symbol_font,
+        fill=(0, 0, 0),
+        anchor="mm",
+    )
+
     return card_image
 
 
@@ -215,6 +265,35 @@ def render_element_cost(elements: list[str]):
         )
 
     return cost_canvas
+
+
+def render_weakness_and_resist(card: Card, image: Image):
+    resist_element = get_resist(card.element)
+    weakness_element = get_weakness(card.element)
+
+    if weakness_element:
+        weakness_x = STATUS_X_GAP
+        render_status_element(card, image, weakness_element, weakness_x)
+
+    if resist_element:
+        resist_x = image.width // 2
+        render_status_element(card, image, resist_element, resist_x)
+
+    retreat_cost_gap = image.width - STATUS_X_GAP
+    render_status_element(card, image, PokemonElements.NEUTRAL, retreat_cost_gap)
+
+
+def render_status_element(card: Card, image: Image, element: Element, x_position: int):
+    element_image = Image.open(f"resources/elements/{element.name.lower()}_element.png")
+    element_image = element_image.resize((STATUS_SIZE, STATUS_SIZE))
+    image.paste(
+        element_image,
+        (
+            x_position - STATUS_SIZE // 2,
+            STATUS_Y_POSITION - STATUS_SIZE // 2,
+        ),
+        element_image,
+    )
 
 
 def card_from_json(data: dict) -> Card:
