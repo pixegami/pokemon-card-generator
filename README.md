@@ -20,7 +20,7 @@ The finished generated card will have a name, description, and card artwork.
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | Ignax is a sweltering hot Pokemon found in desert-like regions that brandishes a deadly dark axe. It is known for its fierce demeanor and its Ignition Surge ability, which it uses toits advantage in fierce, awe-inspiring battles. | ![003_ignax](gallery/renders/003_ignax.png) |
 
-|
+
 
 ## Series Of Cards (Evolution)
 
