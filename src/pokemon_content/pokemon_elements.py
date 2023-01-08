@@ -29,7 +29,7 @@ class PokemonElements:
     )
 
     ALL = [NEUTRAL, FIRE, WATER, GRASS, ELECTRIC, PSYCHIC]
-    _ELEMENTS_BY_NAME = {element.name: element for element in ALL}
+    _ELEMENTS_BY_NAME = {element.name.lower(): element for element in ALL}
 
     def get_element_by_name(name: str) -> Element:
-        return PokemonElements._ELEMENTS_BY_NAME[name]
+        return PokemonElements._ELEMENTS_BY_NAME[name.lower()]

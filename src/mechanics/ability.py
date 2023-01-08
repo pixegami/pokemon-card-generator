@@ -23,7 +23,7 @@ class Ability:
         if self.element.is_neutral:
             elemental_bonus_points = 0
         else:
-            if self.is_mixed_element:
+            if self.is_mixed_element or self.cost == 1:
                 elemental_bonus_points = 10
             else:
                 elemental_bonus_points = 20

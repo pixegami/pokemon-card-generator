@@ -33,6 +33,8 @@ def get_image_prompt(card: Card):
     message += " --ar 3:2"
     message = message.replace("  ", " ")
     message = message.replace(" ,", ",")
+
+    message = f"{card.name}::0 " + message
     return message
 
 

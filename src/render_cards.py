@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 import pathlib
 from PIL import Image, ImageFont, ImageDraw
 
@@ -21,9 +22,14 @@ POWER_WIDTH = 64
 def render_cards(collection_path: str):
     card_path = pathlib.Path(collection_path, "cards")
     card_render_path = pathlib.Path(collection_path, "renders")
-    card_render_path.mkdir(exist_ok=True)
+    os.makedirs(card_render_path, exist_ok=True)
 
     for card_path in card_path.iterdir():
+
+        # Only render .json files.
+        if not card_path.suffix == ".json":
+            continue
+
         with open(card_path) as f:
             data = json.load(f)
             card = card_from_json(data)
@@ -34,6 +40,7 @@ def render_cards(collection_path: str):
 
 def render_card(card: Card, collection_path: str):
 
+    print(f"Rendering {card.name}")
     card_template_name = f"{card.element.name.lower()}_card.png"
     card_image = Image.open(f"resources/cards/{card_template_name}")
 
@@ -55,6 +62,9 @@ def render_card(card: Card, collection_path: str):
         canvas.paste(card_art_image, (int(monster_image_x), int(monster_image_y)))
         canvas.paste(card_image, (0, 0), card_image)
         card_image = canvas
+    else:
+        # Print in yellow ASCII.
+        print(f"\033[93m [WARN] {card_art_path} not found.\033[0m")
 
     # Write the name of the card.
     name_text_position = (48, 64)
@@ -215,7 +225,6 @@ def card_from_json(data: dict) -> Card:
         element=PokemonElements.get_element_by_name(data["element"]),
         rarity=PokemonRarity.get_rarity_by_name(data["rarity"]),
         hp=data["hp"],
-        part_of_evolution=data["part_of_evolution"],
     )
     card.abilities = [ability_from_json(ability) for ability in data["abilities"]]
     return card
@@ -235,7 +244,7 @@ def main():
     argparser.add_argument(
         "--collection",
         help="File path to the collection to render",
-        default="data/sample_collections/standard",
+        default="samples/classic",
     )
     collection_path = argparser.parse_args().collection
     render_cards(collection_path)

@@ -86,9 +86,8 @@ WITH_TEXTURE = with_detail("texture")
 
 WEARING_ARMOR = wearing_detail("armor")
 WEARING_BRACERS = wearing_detail("bracers")
-WEARING_CAPE = wearing_detail("cape", "a")
 WEARING_GEMS = wearing_detail("gemstones")
-BODY_WEARABLES = [WEARING_ARMOR, WEARING_BRACERS, WEARING_CAPE, WEARING_GEMS]
+BODY_WEARABLES = [WEARING_ARMOR, WEARING_BRACERS, WEARING_GEMS]
 
 WEARING_MASK = wearing_detail("mask", "a")
 WEARING_CROWN = wearing_detail("crown", "a")
@@ -179,25 +178,25 @@ DRAGON = CreatuteType("dragon", [*LIZARD_DETAILS, WITH_CRYSTAL_CORE])
 SERPENT = CreatuteType("serpent", [*NO_HAND_REPTILE_DETAILS])
 CROCODILE = CreatuteType("crocodile", [*NO_HAND_REPTILE_DETAILS])
 
+BIRD_DETAILS = [WITH_TAIL, WITH_FEATHERS, WITH_BEAK, *ALL_WEARABLES]
+SWAN = CreatuteType("swan", [*BIRD_DETAILS])
+
 MARINE_CREATUTES = [
     REPTILE,
     CLAM,
     PENGUIN,
-    ORCA,
     SHARK,
     SQUID,
     CRUSTACEAN,
     TORTOISE,
     SEA_HORSE,
-    SEA_SNAKE,
     FISH,
     OCTOPUS,
-    DRAGON,
     SERPENT,
     CROCODILE,
+    SWAN,
 ]
 
-BIRD_DETAILS = [WITH_TAIL, WITH_FEATHERS, WITH_BEAK, *ALL_WEARABLES]
 BIRD = CreatuteType("bird", [*BIRD_DETAILS])
 PARROT = CreatuteType("parrot", [*BIRD_DETAILS])
 OWL = CreatuteType("owl", [*BIRD_DETAILS])
@@ -206,18 +205,8 @@ HAWK = CreatuteType("hawk", [*BIRD_DETAILS])
 FALCON = CreatuteType("falcon", [*BIRD_DETAILS])
 CROW = CreatuteType("crow", [*BIRD_DETAILS])
 OSTRICH = CreatuteType("ostrich", [*BIRD_DETAILS])
-SWAN = CreatuteType("swan", [*BIRD_DETAILS])
 
-BIRDS = [
-    BIRD,
-    PARROT,
-    OWL,
-    EAGLE,
-    HAWK,
-    FALCON,
-    CROW,
-    OSTRICH,
-]
+BIRDS = [BIRD, PARROT, OWL, EAGLE, HAWK, FALCON, CROW, OSTRICH, SWAN]
 
 DRAGON = CreatuteType("dragon", [*LIZARD_DETAILS, WITH_CRYSTAL_CORE])
 LIZARD = CreatuteType("lizard", [*LIZARD_DETAILS])
@@ -238,13 +227,11 @@ SPIDER = CreatuteType("spider", [*INSECT_DETAILS])
 SCORPION = CreatuteType("scorpion", [*INSECT_DETAILS])
 
 INSECTS = [
-    BUTTERFLY,
     MANTIS,
     BEETLE,
     LADYBUG,
     DRAGONFLY,
     SPIDER,
-    SCORPION,
 ]
 
 ABSTRACT_DETAILS = [WITH_CRYSTAL_CORE, WITH_TEXTURE]
@@ -256,10 +243,10 @@ ABSTRACT_TYPES = [PUMPKIN, GHOST, TREANT, GOLEM]
 
 CREATURES_BY_ELEMENT = {
     PokemonElements.NEUTRAL: set(BIRDS + LAND_MAMMALS),
-    PokemonElements.FIRE: set(INSECTS + LAND_MAMMALS + REPTILES + BIRDS),
+    PokemonElements.FIRE: set(LAND_MAMMALS + REPTILES),
     PokemonElements.WATER: set(MARINE_CREATUTES + REPTILES),
     PokemonElements.GRASS: set(INSECTS + REPTILES + LAND_MAMMALS),
-    PokemonElements.ELECTRIC: set(INSECTS + LAND_MAMMALS + REPTILES + BIRDS),
+    PokemonElements.ELECTRIC: set(LAND_MAMMALS + REPTILES + BIRDS),
     PokemonElements.PSYCHIC: set(INSECTS + LAND_MAMMALS + REPTILES + BIRDS),
 }
 
@@ -281,7 +268,7 @@ GLOBAL_DETAIL_ADJECTIVES = [
 ]
 
 DETAIL_ADJECTIVES_BY_ELEMENT = {
-    PokemonElements.NEUTRAL: ["white", "shiny", "neutral", "opal", "diamond"],
+    PokemonElements.NEUTRAL: ["white", "shiny", "prismatic", "opal", "diamond"],
     PokemonElements.FIRE: ["red and white", "orange and black", "fiery", "ruby"],
     PokemonElements.WATER: [
         "blue and white",
@@ -319,36 +306,43 @@ AMBIENCE_BY_ELEMENT = {
         "bright lighting",
         "soft ambient light",
         "faded prismatic bokeh background",
+        "silver galaxy background",
     ],
     PokemonElements.FIRE: [
         "red and purple ambient lighting",
         "blue and red ambient lighting",
         "lava texture background",
+        "orange galaxy background",
     ],
     PokemonElements.WATER: [
         "teal and blue ambient lighting",
-        "aurora sky",
-        "sparkling water background",
+        "aurora background",
+        "sparkling blue background",
         "gleaming bubble background",
+        "sapphire blue galaxy background",
     ],
     PokemonElements.GRASS: [
         "green and orange ambient lighting",
         "green and teal ambient lighting",
         "emerald bokeh lighting",
         "sunlight ray ambience",
+        "emerald galaxy background",
     ],
     PokemonElements.ELECTRIC: [
         "yellow and teal ambient lighting",
-        "glittering yellow background",
         "lightning background",
+        "orange galaxy background",
     ],
     PokemonElements.PSYCHIC: [
         "pink bokeh lighting",
-        "mysterious dark lighting",
-        "dreamlike background",
+        "violet shadows",
+        "dreamy background",
         "galaxy background",
     ],
 }
+
+ALL_SUBJECTS = [*LAND_MAMMALS, *MARINE_CREATUTES, *REPTILES, *INSECTS, *BIRDS]
+ALL_SUBJECTS_BY_NAME = {subject.name: subject for subject in ALL_SUBJECTS}
 
 
 def get_rarity_adjectives_set(rarity_index: int) -> set[str]:
@@ -366,9 +360,9 @@ def get_series_adjectives_set(series_index: int) -> set[str]:
     if series_index == 0:
         return {"chibi cute", "chibi young"}
     if series_index == 1:
-        return {"young", "", "athletic"}
+        return {"young", "", "dynamic"}
     if series_index == 2:
-        return {"gigantic", "massive", "titanic"}
+        return {"gigantic", "massive"}
     else:
         return {""}
 
@@ -377,11 +371,11 @@ def get_style_suffix(series_index: int | None) -> set[str]:
     if series_index == 0:
         return {"anime chibi drawing style, pastel background"}
     if series_index == 1:
-        return {"inked watercolor anime sketch"}
+        return {"anime sketch with watercolor"}
     if series_index == 2:
         return {"polished final by studio ghibli"}
     else:
-        return {""}
+        return {"anime sketch"}
 
 
 def get_random_style_suffix(series_index: int | None) -> str:
@@ -402,12 +396,21 @@ def get_creature_types(element: Element) -> set[CreatuteType]:
     return CREATURES_BY_ELEMENT.get(element)
 
 
+def get_closest_match(subject_override: str):
+    if subject_override in ALL_SUBJECTS_BY_NAME:
+        return ALL_SUBJECTS_BY_NAME[subject_override]
+    else:
+        # Create a new subject with the name of the override.
+        return CreatuteType(subject_override, [WEARING_ARMOR])
+
+
 def get_environments(element: Element) -> set[str]:
     return ENVIRONMENTS_BY_ELEMENT.get(element)
 
 
 def get_random_ambience(element: Element) -> str:
-    return random.choice(AMBIENCE_BY_ELEMENT.get(element))
+    # Get a random ambience, but don't return the last one, which is for fully evolved pokemon.
+    return random.choice(AMBIENCE_BY_ELEMENT.get(element)[:-1])
 
 
 def get_random_detail_adjective(element: Element) -> str:

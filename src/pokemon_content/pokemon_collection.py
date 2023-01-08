@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 import random
 from pokemon_content.pokemon_content_pool import (
+    AMBIENCE_BY_ELEMENT,
+    get_closest_match,
     get_creature_types,
     get_environments,
     get_random_ambience,
@@ -38,6 +40,7 @@ class PokemonCollection(Collection):
         rarity: Rarity,
         inherited_style: Style = None,
         series_index: int | None = None,
+        subject_override: str = None,
     ) -> Card:
 
         is_part_of_series = series_index is not None
@@ -48,7 +51,7 @@ class PokemonCollection(Collection):
 
         hp_points = random.randint(0, max_ability_points // 2)
         ability_points = max_ability_points - hp_points
-        ability_costs = self.get_ability_points_costs(ability_points)
+        ability_costs = self.get_ability_points_costs(ability_points, rarity.index)
         abilities = self.generate_abilities(element, ability_costs)
 
         for ability in abilities:
@@ -58,7 +61,9 @@ class PokemonCollection(Collection):
         bonus_hp_points = max_ability_points + (hp_points * self.ABILITY_TO_HP_PTS)
         hp = 10 * bonus_hp_points
 
-        style = self.generate_style(inherited_style, element, rarity, series_index)
+        style = self.generate_style(
+            inherited_style, element, rarity, series_index, subject_override
+        )
 
         card = Card(
             index=len(self.cards) + 1,
@@ -88,6 +93,7 @@ class PokemonCollection(Collection):
         element: Element,
         rarity: Rarity,
         series_index: int | None = None,
+        subject_override: str = None,
     ) -> Style:
 
         style = Style(
@@ -104,14 +110,19 @@ class PokemonCollection(Collection):
             style.detail = inherited_style.detail
             style.environment = inherited_style.environment
         else:
-            potential_subjects = get_creature_types(element)
-            reduced_subjects: set = potential_subjects - self.subjects_seen
-            if len(reduced_subjects) == 0:
-                reduced_subjects = potential_subjects
 
-            subject = random.choice(list(reduced_subjects))
-            self.subjects_seen.add(subject)
-            style.subject = subject.name
+            if subject_override is not None:
+                subject = get_closest_match(subject_override)
+                style.subject = subject.name
+            else:
+                potential_subjects = get_creature_types(element)
+                reduced_subjects: set = potential_subjects - self.subjects_seen
+                if len(reduced_subjects) == 0:
+                    reduced_subjects = potential_subjects
+
+                subject = random.choice(list(reduced_subjects))
+                self.subjects_seen.add(subject)
+                style.subject = subject.name
 
             potential_details = set(subject.details)
             reduced_details: set = potential_details - self.subjects_seen
@@ -145,7 +156,11 @@ class PokemonCollection(Collection):
         ]
 
         # Set the ambience
-        style.ambience = get_random_ambience(element)
+        if rarity.index >= 2 and series_index == 2:
+            # Use the last background for the final card in the series.
+            style.ambience = AMBIENCE_BY_ELEMENT.get(element)[-1]
+        else:
+            style.ambience = get_random_ambience(element)
 
         # Set the style suffix
         style.style_suffix = (
@@ -180,8 +195,10 @@ class PokemonCollection(Collection):
     @staticmethod
     def generate_ability(element: Element, cost: int) -> Ability:
 
-        is_mix = not element.is_neutral and (
-            random.random() < PokemonCollection.MIXED_ELEMENT_CHANCE
+        is_mix = (
+            not element.is_neutral
+            and cost > 1
+            and (random.random() < PokemonCollection.MIXED_ELEMENT_CHANCE)
         )
         ability = Ability(
             name="New Ability", element=element, cost=cost, is_mixed_element=is_mix
@@ -189,17 +206,20 @@ class PokemonCollection(Collection):
         return ability
 
     @staticmethod
-    def get_ability_points_costs(ability_points: int) -> list[str]:
+    def get_ability_points_costs(ability_points: int, rarity_index: int) -> list[str]:
         # Determine how many abilities the card will have, and how many points each ability will cost.
         if ability_points >= 6:
             return [4, ability_points - 4]
         elif ability_points >= 4:
-            first_ability_cost = random.choice([2, 3, 4])
+            first_ability_cost = random.choice([3, 4])
             if first_ability_cost == 4:
                 return [4]
             else:
                 return [first_ability_cost, ability_points - first_ability_cost]
         elif ability_points == 3:
-            return [3] if random.random() < 0.5 else [2, 1]
+            if rarity_index < 1:
+                return [2, 1]
+            else:
+                return [3] if random.random() < 0.5 else [2, 1]
         else:
             return [ability_points]

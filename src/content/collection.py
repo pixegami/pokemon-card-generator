@@ -24,12 +24,16 @@ class Collection:
     subjects_seen: set[str] = field(default_factory=set)
     card_names_seen: set[str] = field(default_factory=set)
 
-    def generate_random_cards(self, element: Element = None) -> list[Card]:
+    def generate_random_cards(
+        self, element: Element = None, subject_override: str = None
+    ) -> list[Card]:
         element = element if element else random.choice(self.elements)
         n_series = random.randint(1, 3)
-        return self.generate_card_series(element, n_series)
+        return self.generate_card_series(element, n_series, subject_override)
 
-    def generate_card_series(self, element: Element, n: int = 1) -> list[Card]:
+    def generate_card_series(
+        self, element: Element, n: int = 1, subject_override: str = None
+    ) -> list[Card]:
 
         # The last card in the series is always the highest in the series.
         # Each card in the series is one rarity higher than the previous.
@@ -50,6 +54,7 @@ class Collection:
                 rarity=rarity,
                 inherited_style=card_style,
                 series_index=i if n > 1 else None,
+                subject_override=subject_override,
             )
 
             if i == 0:
@@ -65,6 +70,7 @@ class Collection:
         rarity: Rarity,
         style: Style = None,
         series_index: int | None = None,
+        subject_override: str = None,
     ) -> Card:
         pass
 
