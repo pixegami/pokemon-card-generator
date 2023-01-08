@@ -1,0 +1,20 @@
+{
+  "index": 18,
+  "name": "Cygnet",
+  "description": "This chibi-cute Pokemon appears to be wearing a white cape. Cygnet is often seen gliding gracefully in the oceans and rivers it calls home. Cygnet is very social, preferring to flock with others of its kind and can often be seen playing with its friends. When threatened, Cygnet will use its powerful Scalding ability to ward off predators. Cygnet is a peaceful pokemon, spending most of its day lounging in the water and eating its favorite snacks.",
+  "element": "Water",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 80,
+  "abilities": [
+    {
+      "name": "Scald",
+      "element": "Water",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Cygnet::0 a chibi cute water-type swan pokemon::1.8, wearing a white cape, in a ocean environment, teal and blue ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "018_cygnet.png"
+}

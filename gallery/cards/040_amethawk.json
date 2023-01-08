@@ -1,0 +1,20 @@
+{
+  "index": 40,
+  "name": "Amethawk",
+  "description": "Amethawk is an enigmatic pokemon shrouded in mystery. A majestic and majestic presence, it is shrouded in an aura of tranquility and mystery. Its brilliant, amethyst-colored gemstones gleam in the darkness of its preferred cave-like habitats, giving it an ethereal appearance that astounds all who come across it. With its powerful, psychically-charged wings, it soars through its domain, creating psychotropic waves of energy that ripple through the air. It lives a contemplative life, ever searching for deeper understanding of its mysterious powers.",
+  "element": "Psychic",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 130,
+  "abilities": [
+    {
+      "name": "Psychic Nova",
+      "element": "Psychic",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    }
+  ],
+  "image_prompt": "a massive mythical psychic-type hawk pokemon::2.5, wearing amethyst gemstones, in a cave environment, pink bokeh lighting, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "040_amethawk.png"
+}

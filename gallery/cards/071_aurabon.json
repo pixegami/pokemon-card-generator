@@ -1,0 +1,27 @@
+{
+  "index": 71,
+  "name": "Aurabon",
+  "description": "Aurabon is a mysterious pokemon that inhabits the highest peaks of the mountainous terrain. It's appearance is characterized by a majestic, golden crystal headband and a majestic, electric blue fur coat. Aurabon spends most of its day perched atop a mountain peak, surveying the lands below with its keen, electric-charged senses. When danger arises, Aurabon can call upon its Electric Fury and Zapstrike abilities to fend off predators. Despite its intimidating exterior, Aurabon is a gentle creature that is rarely seen away from its mountain home.",
+  "element": "Electric",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Electric Fury",
+      "element": "Electric",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    },
+    {
+      "name": "Zapstrike",
+      "element": "Electric",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "a electric-type bear pokemon::1.8, wearing a golden crystal headband, in a mountain environment, glittering yellow background, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "071_aurabon.png"
+}

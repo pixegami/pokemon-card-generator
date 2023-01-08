@@ -1,0 +1,20 @@
+{
+  "index": 28,
+  "name": "Ignizar",
+  "description": "Ignizar is a majestic pokemon found near volcanoes. Adorned with a magnificent crystal headband, Ignizar's fiery feathers are a sight to behold. By focusing its internal energies, this pokemon can produce powerful Heat Rays that can be used to defend itself or to cause great destruction. Ignizar loves to take to the skies, soaring gracefully above the molten lava and ash while showering the land with its mesmerizing flames.",
+  "element": "Fire",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 130,
+  "abilities": [
+    {
+      "name": "Pyroclast",
+      "element": "Fire",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    }
+  ],
+  "image_prompt": "a gigantic mythical fire-type parrot pokemon::2.5, wearing a ornate crystal headband, in a volcano environment, red and purple ambient lighting, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "028_ignizar.png"
+}

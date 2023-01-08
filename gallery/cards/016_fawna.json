@@ -1,0 +1,20 @@
+{
+  "index": 16,
+  "name": "Fawna",
+  "description": "Fawna is an adorable chibi pokemon with a sweet, gentle nature. It loves to wander through grassy meadows, its vibrant petal-covered fur shimmering in the sunlight. Its special ability, Petal Burst, makes it a whirling dervish of petals and leaves when threatened, while also able to offer protection to others around it. Fawna is naturally a peaceful Pokemon, but it won't shy away from standing up for itself and its friends.",
+  "element": "Grass",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Petal Burst",
+      "element": "Grass",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 40
+    }
+  ],
+  "image_prompt": "a chibi cute grass-type goat pokemon, in a woods environment, sunlight ray ambience, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "016_fawna.png"
+}

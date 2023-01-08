@@ -1,0 +1,27 @@
+{
+  "index": 104,
+  "name": "Aquaarmo",
+  "description": "Aquaarmo is an impressive and athletic pokemon that is equipped with white and black armor. It prefers to spend its time in the ocean-like environments, where it can be seen playing and showing off its immense physical strength. Aquaarmo is quite adept at using its powerful Ocean Crush and Tackle abilities to fight off predators, often showing its opponents no mercy. When it's not battling, Aquaarmo loves to enjoy a good swim and is often seen taking a leisurely stroll on the ocean floor.",
+  "element": "Water",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 60,
+  "abilities": [
+    {
+      "name": "Ocean Crush",
+      "element": "Water",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    },
+    {
+      "name": "Tackle",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "a athletic epic water-type shark pokemon::2.5, wearing white and black armor, in a ocean environment, teal and blue ambient lighting, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "104_aquaarmo.png"
+}

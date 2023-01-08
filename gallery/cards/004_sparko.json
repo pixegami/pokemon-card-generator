@@ -1,0 +1,20 @@
+{
+  "index": 4,
+  "name": "Sparko",
+  "description": "Sparko is a small and cheeky electric-type pokemon. It loves to explore its mountainous surroundings, bouncing around in the most energetic way imaginable. Its white fur radiates electric charges like a lightning storm, making it a force to be reckoned with. Despite its formidable power, Sparko loves nothing more than to cuddle up with its friends. It's also known to take long naps in the sun, recharging itself for the next day's adventures.",
+  "element": "Electric",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Surge Bolt",
+      "element": "Electric",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Sparko::0 a chibi cute electric-type fox pokemon, in a mountain environment, yellow and teal ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "004_sparko.png"
+}

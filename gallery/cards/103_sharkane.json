@@ -1,0 +1,20 @@
+{
+  "index": 103,
+  "name": "Sharkane",
+  "description": "Sharkane is a playful pokemon that loves to hop around in the ocean-like environment it calls home. Its unique white and black armor gives it the look of a noble knight, and its Aquablast ability gives it the power to shoot a stream of water with great force. It can also move quickly underwater and has been known to use its speed to surprise unsuspecting foes. When not participating in epic water battles, Sharkane can often be found frolicking in the waves and playing with its ocean friends.",
+  "element": "Water",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 80,
+  "abilities": [
+    {
+      "name": "Aquablast",
+      "element": "Water",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "a chibi young water-type shark pokemon::1.8, wearing white and black armor, in a ocean environment, sparkling water background, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "103_sharkane.png"
+}

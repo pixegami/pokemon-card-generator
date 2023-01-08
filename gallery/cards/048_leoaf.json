@@ -1,0 +1,27 @@
+{
+  "index": 48,
+  "name": "Leoaf",
+  "description": "Leoaf is a unique and elusive creature, hidden among the bushes and trees in its home environment. Its striking white and green fur is a sign of its potent powers, and it has been known to have an affinity with nature. Leoaf is incredibly difficult to spot, as it spends most of its day tending to and protecting the plants in its environment. It is also said to be able to manipulate the plants around it using its mysterious Petal Pulse and Grass Blast abilities, allowing it to quickly adapt to its surroundings. For a lucky few, catching a glimpse of this rare legendary Pokemon is a once in a lifetime experience.",
+  "element": "Grass",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 100,
+  "abilities": [
+    {
+      "name": "Grass Slicer",
+      "element": "Grass",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 40
+    },
+    {
+      "name": "Claw",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "a legendary grass-type lion pokemon::2.5, with white and green fur, in a woods environment, emerald bokeh lighting, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "048_leoaf.png"
+}

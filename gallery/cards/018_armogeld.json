@@ -1,0 +1,27 @@
+{
+  "index": 18,
+  "name": "Armogeld",
+  "description": "Armogeld is a legendary titanic Pok\u00e9mon that is known for its white armor-like covering. It dwells within wooded regions and majestically traverses the terrain with its incredible size and power. Its daily routine consists of gathering sunlight and storing it within its armor, charging up its signature Autumn Fury attack. Its Tackle ability also helps to ward off any intruders who dares to cross its path. Armogeld is a majestic sight to behold and is sure to leave a lasting impression on anyone who has the privilege of meeting it.",
+  "element": "Grass",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Petal Storm",
+      "element": "Grass",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    },
+    {
+      "name": "Tackle",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "a titanic legendary grass-type goat pokemon::2.5, wearing white armor, in a woods environment, green and teal ambient lighting, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "018_armogeld.png"
+}

@@ -1,0 +1,27 @@
+{
+  "index": 118,
+  "name": "Boltik",
+  "description": "Boltik is a chibi electric-type pokemon that hides in thunderstorm-filled areas. It loves zapping its opponents with its signature lightning-quick speed and powerful electrical shocks. When it isn't battling or searching for food, it loves to hide among the stormy clouds, blending in with the jagged landscape and the electric-charged air. With its skills of agility and surprise, it will always be ready to zap any unsuspecting foe.",
+  "element": "Electric",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 30,
+  "abilities": [
+    {
+      "name": "Surge Bolt",
+      "element": "Electric",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    },
+    {
+      "name": "Jab",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "a chibi cute electric-type chameleon pokemon, in a thunderstorm environment, yellow and teal ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "118_boltik.png"
+}

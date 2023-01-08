@@ -1,0 +1,27 @@
+{
+  "index": 12,
+  "name": "Dreiga",
+  "description": "Dreiga is a curious and playful pokemon, often seen weaving through the water-filled environments of its home. Its sharp teal and navy spear is a testament to its strength and agility. Dreiga's powerful Water Cannon and Pound abilities make it a formidable adversary, but it uses them carefully, preferring to spend its days exploring and engaging in friendly play with its peers.",
+  "element": "Water",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Water Cannon",
+      "element": "Water",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    },
+    {
+      "name": "Pound",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Dreiga::0 a dynamic water-type lizard pokemon::1.8, holding a teal and navy spear, in a river environment, aurora background, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "012_dreiga.png"
+}

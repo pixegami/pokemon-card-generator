@@ -1,0 +1,27 @@
+{
+  "index": 69,
+  "name": "Jungala",
+  "description": "Jungala is an elegant pokemon with a regal mask that can frequently be found wandering through forest-like environments. It is incredibly alert, able to sense the slightest vibrations in the ground and quickly respond with powerful Root Quake to protect itself. Jungala also loves to explore, wandering through the shadows of the trees and leaping up onto branches to take in the sights of its home. It is an incredibly agile pokemon and loves tackling obstacles, whether they be trees, rocks, or other pokemon. Jungala is a noble pokemon, respected by its peers and respected by all who wander too deep into the forest.",
+  "element": "Grass",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 60,
+  "abilities": [
+    {
+      "name": "Leaf Slicer",
+      "element": "Grass",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    },
+    {
+      "name": "Tackle",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "a epic grass-type cat pokemon::2.5, wearing a regal mask, in a forest environment, green and teal ambient lighting, --niji --ar 3:2",
+  "image_file": "069_jungala.png"
+}

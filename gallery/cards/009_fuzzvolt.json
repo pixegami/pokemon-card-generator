@@ -1,0 +1,27 @@
+{
+  "index": 9,
+  "name": "Fuzzvolt",
+  "description": "Fuzzvolt is an elusive electric-type pokemon with ornately patterned fur. It stealthily traverses city-like environments, using its Lightning Blast and Slash abilities to surprise unwary trespassers. As an active pokemon, Fuzzvolt loves to explore, darting from park to park at night, gathering mysterious items as it toys with its opponents. Its graceful, electric-tinged movements add to its aura of mystery, making it an exciting pokemon to observe.",
+  "element": "Electric",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Lightning Blast",
+      "element": "Electric",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 50
+    },
+    {
+      "name": "Slash",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Fuzzvolt::0 a electric-type monkey pokemon::1.8, with ornate fur, in a city environment, yellow and teal ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "009_fuzzvolt.png"
+}

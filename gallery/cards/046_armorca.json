@@ -1,0 +1,27 @@
+{
+  "index": 46,
+  "name": "Armorca",
+  "description": "Armorca is an awe-inspiring sight in the water, with its glimmering white and black armor shimmering in the sunlight. This mythical water-type Pok\u00e9mon loves nothing more than to swim through the vast depths of the ocean, exploring its depths and secrets. It is a master of adaptation, able to use its environment in creative ways to outwit foes that oppose it. Armorca's abilities allow it to unleash a powerful scald that can quickly disable its opponents, as well as tear them apart with its strong tackle. Its armor is a symbol of its strength, as it is constantly scanning for new adversaries and opportunities.",
+  "element": "Water",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 100,
+  "abilities": [
+    {
+      "name": "Scald",
+      "element": "Water",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    },
+    {
+      "name": "Tackle",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "a mythical water-type orca pokemon::2.5, wearing white and black armor, in a ocean environment, aurora sky, --niji --ar 3:2",
+  "image_file": "046_armorca.png"
+}

@@ -1,0 +1,27 @@
+{
+  "index": 27,
+  "name": "Flarewing",
+  "description": "Flarewing is a majestic pokemon, whose blazing-red feathers and ochre-orange wings are a striking sight. It is often found nesting in volcanic mountains, and its crystal headband glitters brilliantly against the scorched soil. An incredible athlete, it can be seen soaring high above its home, with incredible endurance and agility. Its dual abilities, Incinerator and Scorch, make it a formidable foe - its very breath can incinerate almost anything! In its day-to-day life, Flarewing can often be seen gathering precious minerals to adorn its headband, or spreading its wings in the face of an oncoming storm.",
+  "element": "Fire",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Incinerator",
+      "element": "Fire",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 50
+    },
+    {
+      "name": "Cinder Slash",
+      "element": "Fire",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "a athletic fire-type parrot pokemon::1.8, wearing a ornate crystal headband, in a volcano environment, lava texture background, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "027_flarewing.png"
+}

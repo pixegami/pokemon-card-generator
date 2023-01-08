@@ -1,0 +1,20 @@
+{
+  "index": 21,
+  "name": "Plimber",
+  "description": "Plimber is an energetic and nimble pokemon. Its white fur coat has a vivid and glossy sheen, and it loves to leap gracefully through its forested home. During the day, it can be found capering and somersaulting through the treetops, gathering the energy of the sun and rain to help it power its special ability, Blossom Burst. At night, it can be seen perched atop the branches, its yellow eyes scanning the horizon as it looks for its next adventure.",
+  "element": "Grass",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Blossom Burst",
+      "element": "Grass",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    }
+  ],
+  "image_prompt": "Plimber::0 a dynamic grass-type monkey pokemon::1.8, with white fur, in a woods environment, emerald bokeh lighting, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "021_plimber.png"
+}

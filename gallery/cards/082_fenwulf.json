@@ -1,0 +1,20 @@
+{
+  "index": 82,
+  "name": "Fenwulf",
+  "description": "Fenwulf is an elusive and mysterious Pok\u00e9mon. It is said to be found in jungle-like environments, wearing a shimmering white and green crystal headband. This Pok\u00e9mon has the power to create beautiful explosions of petals with its Petal Burst ability, and can also use Vineshock to ensnare its opponents. During the day, it often enjoys browsing the surrounding vegetation and soaking up the natural sunlight. At night, it will rest in a hidden nook in the trees, its crystal headband twinkling in the moonlight.",
+  "element": "Grass",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 100,
+  "abilities": [
+    {
+      "name": "Emerald Claw",
+      "element": "Grass",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    }
+  ],
+  "image_prompt": "a young mythical grass-type wolf pokemon::2.5, wearing a white and green crystal headband, in a jungle environment, sunlight ray ambience, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "082_fenwulf.png"
+}

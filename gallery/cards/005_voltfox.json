@@ -1,0 +1,20 @@
+{
+  "index": 5,
+  "name": "Voltfox",
+  "description": "Voltfox is a majestic pokemon that dwells within mountain ranges, radiating an aura of regal strength. It is a force to be reckoned with; its Electric Fury allows it to discharge formidable sparks of energy which it unleashes as a method of defence. In its day-to-day life, Voltfox can often be found carefully scouting its environment, alert to any potential danger and ready to act at a moment\u2019s notice.",
+  "element": "Electric",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Electric Fury",
+      "element": "Electric",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    }
+  ],
+  "image_prompt": "Voltfox::0 a dynamic electric-type fox pokemon::1.8, wearing a regal mask, in a mountain environment, lightning background, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "005_voltfox.png"
+}

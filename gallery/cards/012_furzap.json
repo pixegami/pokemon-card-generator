@@ -1,0 +1,27 @@
+{
+  "index": 12,
+  "name": "Furzap",
+  "description": "Furzap is a vibrant pokemon with an amazing sense of speed and agility. It can be found in various open field environments, where it is known for its remarkably fluid movements. Furzap is highly adept in using its whip to its advantage, manipulating it to launch devastating attacks. As an active pokemon, Furzap spends its days going from one activity to the next, constantly honing its skills and outmaneuvering its opponents.",
+  "element": "Neutral",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Pound",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    },
+    {
+      "name": "Scratch",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "a athletic neutral-type rabbit pokemon::1.8, holding a neutral whip, in a field environment, faded prismatic bokeh background, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "012_furzap.png"
+}

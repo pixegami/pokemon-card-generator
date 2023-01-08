@@ -1,0 +1,20 @@
+{
+  "index": 56,
+  "name": "Crystalvee",
+  "description": "Crystalvee is an adorable and regal water-type Pok\u00e9mon. This chibi creature has a shining crystal core that glimmers brightly in the depths of its river-like home. It loves to swim around with playful ease, often seen happily gliding through its aquatic environment. On occasion, it will use its secret Water Jet ability to create magnificent displays of shimmering waterspouts!",
+  "element": "Water",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 80,
+  "abilities": [
+    {
+      "name": "Water Jet",
+      "element": "Water",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 40
+    }
+  ],
+  "image_prompt": "a chibi young water-type squid pokemon::1.8, with a regal crystal core, in a river environment, gleaming bubble background, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "056_crystalvee.png"
+}

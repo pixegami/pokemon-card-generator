@@ -1,0 +1,27 @@
+{
+  "index": 8,
+  "name": "Sapphynx",
+  "description": "Sapphrynx is an elegant and resilient pokemon with a sapphire armor plating that protects it from predators in the ocean's depths. It moves gracefully through the deep blue, leaving an elegant trail of sparkling particles. Its Hydro Burst and Douse abilities equip Sapphrynx with the power to defend itself but also to serve as a connection between the ocean and the sky, creating vibrant rainbows of color and sound. This pokemon is truly a sight to behold, and is a special guardian of the ocean's secrets.",
+  "element": "Water",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Hydro Burst",
+      "element": "Water",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    },
+    {
+      "name": "Douse",
+      "element": "Water",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Sapphynx::0 a special water-type fish pokemon::1.8, wearing sapphire armor, in a ocean environment, sparkling blue background, anime sketch --niji --ar 3:2",
+  "image_file": "008_sapphynx.png"
+}

@@ -1,0 +1,27 @@
+{
+  "index": 85,
+  "name": "Amethyx",
+  "description": "Amethyx is an elusive pokemon that is rarely seen in its cave-like habitat. It is shrouded in an amethyst cape, adding to its mysterious aura. Internally, it is filled with a powerful energy that expresses itself through its Astral Beam ability. Amethyx spends its days honing its speed, agility, and psychic powers, and is known for its athletic prowess in its natural environment.",
+  "element": "Psychic",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Physic",
+      "element": "Psychic",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 30
+    },
+    {
+      "name": "Tackle",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "a athletic psychic-type fox pokemon::1.8, wearing a amethyst cape, in a cave environment, galaxy background, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "085_amethyx.png"
+}

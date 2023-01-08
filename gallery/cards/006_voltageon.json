@@ -1,0 +1,27 @@
+{
+  "index": 6,
+  "name": "Voltageon",
+  "description": "Voltageon is an awe-inspiring creature of immense power, wearing an ancient and regal mask. It has been said to reside in the higher altitudes of mountainous regions. Though Voltageon is a rare sight, those who have had the privilege of seeing it in its natural habitat report that it can be found in the clouds, darting from one peak to the next. With its incredible Hypercharge ability, Voltageon is constantly generating and transporting electrical energy from one place to the next. It also uses its Tackle ability to take down prey quickly, darting through the sky with lightning speed.",
+  "element": "Electric",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Hypercharge",
+      "element": "Electric",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    },
+    {
+      "name": "Tackle",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Voltageon::0 a massive legendary electric-type fox pokemon::2.5, wearing a regal mask, in a mountain environment, orange galaxy background, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "006_voltageon.png"
+}

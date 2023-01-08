@@ -1,0 +1,27 @@
+{
+  "index": 113,
+  "name": "Flamon",
+  "description": "Flamon is a small and playful Pokemon found in areas around volcanic regions. It loves to explore and take in its unique surroundings, often taking naps amongst the hot rocks and ash. Despite its cute stature, Flamon is quite resilient and its Heat Ray ability means it can fend off any predators! It's also incredibly fast and loves to test its agility against any challengers by using its signature move scratch.",
+  "element": "Fire",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 30,
+  "abilities": [
+    {
+      "name": "Heat Ray",
+      "element": "Fire",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 40
+    },
+    {
+      "name": "Scratch",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "a chibi cute fire-type bull pokemon, in a volcano environment, red and purple ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "113_flamon.png"
+}

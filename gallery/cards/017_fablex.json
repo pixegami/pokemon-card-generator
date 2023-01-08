@@ -1,0 +1,27 @@
+{
+  "index": 17,
+  "name": "Fablex",
+  "description": "A cuddly and curious creature, Fablex loves exploring the great outdoors. It can often be seen lurking through fields, napping in grassy meadows, or chasing after smaller bugs with its friends. Its powerful Slash and Scratch abilities help it fend off any potential danger while out on its adventures, and its playful nature brings joy to those who encounter it.",
+  "element": "Neutral",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 30,
+  "abilities": [
+    {
+      "name": "Slash",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    },
+    {
+      "name": "Scratch",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "a chibi cute neutral-type lynx pokemon, in a field environment, pastel colors, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "017_fablex.png"
+}

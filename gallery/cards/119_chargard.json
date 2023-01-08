@@ -1,0 +1,20 @@
+{
+  "index": 119,
+  "name": "Chargard",
+  "description": "Chargard is a playful pokemon, always on the lookout for exciting adventures. It loves thunderous weather, and will often be seen holding its yellow and black shield, ready for anything that comes its way. With its powerful Voltstrike ability, it can rapidly move through its environment and make short work of any enemies it faces. Its fearless and energetic personality make it a popular pokemon companion!",
+  "element": "Electric",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Voltstrike",
+      "element": "Electric",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 50
+    }
+  ],
+  "image_prompt": "a young electric-type chameleon pokemon::1.8, holding a yellow and black shield, in a thunderstorm environment, lightning background, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "119_chargard.png"
+}

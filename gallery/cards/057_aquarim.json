@@ -1,0 +1,20 @@
+{
+  "index": 57,
+  "name": "Aquarim",
+  "description": "Aquarim is a regal and majestic Pokemon, whose shimmering crystal core is a symbol of its power. It can be found in freshwater habitats, spending its days living among the currents and freshwater plants. Its graceful movements make it look like a royal creature, and its ability to surf is evidence of its agility and skill. It is known to be a social creature and loves to explore its dynamic environment.",
+  "element": "Water",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 120,
+  "abilities": [
+    {
+      "name": "Surf",
+      "element": "Water",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 50
+    }
+  ],
+  "image_prompt": "a young epic water-type squid pokemon::2.5, with a regal crystal core, in a river environment, gleaming bubble background, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "057_aquarim.png"
+}

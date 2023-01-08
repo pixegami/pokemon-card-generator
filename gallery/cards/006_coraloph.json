@@ -1,0 +1,27 @@
+{
+  "index": 6,
+  "name": "Coraloph",
+  "description": "Coraloph is a regal Pok\u00e9mon that radiates a beautiful sapphire aura. Its daily activities involve playing and basking in the sun on the warm ocean beds. Its long, agile limbs make it a master of maneuvering the waves, with Wave Strike and Aqua Jet serving as powerful attacks that it will use to defend itself.",
+  "element": "Water",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Wave Strike",
+      "element": "Water",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    },
+    {
+      "name": "Aqua Jet",
+      "element": "Water",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 40
+    }
+  ],
+  "image_prompt": "Coraloph::0 a water-type monkey pokemon::1.8, wearing a sapphire crown, in a ocean environment, sparkling blue background, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "006_coraloph.png"
+}

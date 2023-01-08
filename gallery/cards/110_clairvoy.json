@@ -1,0 +1,20 @@
+{
+  "index": 110,
+  "name": "Clairvoy",
+  "description": "Clairvoy is a mysterious pokemon commonly seen near castle-like environments. It moves through the air with almost supernatural grace, which has caused some to refer to it as a spirit from beyond. It appears to be in tune with its surroundings, as if it can foresee what will happen. Its Psychic Nova ability is used to defend its castle-home from any intruders. When not on the lookout for danger, Clairvoy can be found gliding through the sky, seemingly dancing with the clouds.",
+  "element": "Psychic",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 40,
+  "abilities": [
+    {
+      "name": "Psychic Nova",
+      "element": "Psychic",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    }
+  ],
+  "image_prompt": "a basic psychic-type cat pokemon, in a castle environment, mysterious dark lighting, --niji --ar 3:2",
+  "image_file": "110_clairvoy.png"
+}

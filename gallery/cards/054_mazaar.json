@@ -1,0 +1,20 @@
+{
+  "index": 54,
+  "name": "Mazaar",
+  "description": "Standing tall and mighty, Mazaar is a titanic mythical Pokemon shrouded in mystery. With a dark mask covering its face, this unique creature can be found roaming the grassland-like environments. It is known to show no fear and possesses an incredible ability to Brutalize any challengers. As its loyal companion, Mazaar is often found standing guard over its herd, ensuring the safety of its family. Although seemingly intimidating, this Pokemon is surprisingly gentle and will always lend a helping hand to those in need.",
+  "element": "Neutral",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 130,
+  "abilities": [
+    {
+      "name": "Brutalize",
+      "element": "Neutral",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 40
+    }
+  ],
+  "image_prompt": "a titanic mythical neutral-type bull pokemon::2.5, wearing a dark mask, in a grassland environment, pastel colors, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "054_mazaar.png"
+}

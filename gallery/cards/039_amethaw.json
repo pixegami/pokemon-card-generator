@@ -1,0 +1,20 @@
+{
+  "index": 39,
+  "name": "Amethaw",
+  "description": "Amethaw is an enigma of the Pokemon world, a rare breed that prefers the dark and mysterious depths of caves. Its feathers shine a vibrant purple, and are cloaked with amethyst gemstones that seem to have been placed with great purpose. Its enigmatic nature is only matched by its powerful Psychic Nova ability, which can be unleashed with intense concentration. Its daily life is spent soaring in the darkness of the caves, seeking out knowledge and power that no other Pokemon can match.",
+  "element": "Psychic",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Astral Beam",
+      "element": "Psychic",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    }
+  ],
+  "image_prompt": "a psychic-type hawk pokemon::1.8, wearing amethyst gemstones, in a cave environment, dreamlike background, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "039_amethaw.png"
+}

@@ -1,0 +1,27 @@
+{
+  "index": 60,
+  "name": "Corvinus",
+  "description": "Corvinus is an enigmatic psychic-type pokemon found in crypt-like environments, characterized by its striking white bracers. It spends its days in mysterious seclusion, leaving its lair only at night to hunt in the dark using its impressive Astral Beam and Mystery Slash abilities. It is said to possess ancient knowledge and power, and is said to be able to ward off evil with a single gaze.",
+  "element": "Psychic",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 60,
+  "abilities": [
+    {
+      "name": "Midnight Hunt",
+      "element": "Psychic",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    },
+    {
+      "name": "Psyonic Tusk",
+      "element": "Psychic",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "a epic psychic-type boar pokemon::2.5, wearing white bracers, in a crypt environment, pink bokeh lighting, --niji --ar 3:2",
+  "image_file": "060_corvinus.png"
+}

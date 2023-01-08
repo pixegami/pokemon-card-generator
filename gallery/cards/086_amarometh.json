@@ -1,0 +1,20 @@
+{
+  "index": 86,
+  "name": "Amarometh",
+  "description": "Amarometh is an awe-inspiring Pok\u00e9mon, born of immense psychic power. It wanders through cave-like environments draped in a mystical amethyst cape, its enormous size lending it a majestic aura. Those who encounter it can feel its powerful presence, and its potent Mind Blast is said to be strong enough to uproot even the largest of trees. In its day-to-day life, Amarometh can often be seen levitating through the air and gazing up at the starry night sky, searching for answers to the mysteries of the universe.",
+  "element": "Psychic",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 130,
+  "abilities": [
+    {
+      "name": "Astral Beam",
+      "element": "Psychic",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    }
+  ],
+  "image_prompt": "a titanic epic psychic-type fox pokemon::2.5, wearing a amethyst cape, in a cave environment, mysterious dark lighting, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "086_amarometh.png"
+}

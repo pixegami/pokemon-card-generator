@@ -1,0 +1,27 @@
+{
+  "index": 67,
+  "name": "Crokral",
+  "description": "Crokral is a majestic pokemon that lives alongside rivers and lakes. Its striking bracers serve as a reminder of its regal nature. Its keen senses allow it to navigate swiftly through murky waters to seek out its prey and allies. Its unique Siphon and Glacial Surge abilities make it a rare and formidable opponent in battle. In its day-to-day life, Crokral enjoys basking in the sun and playing with its friends in the shallow waters of its riverside home.",
+  "element": "Water",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Glacial Surge",
+      "element": "Water",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 50
+    },
+    {
+      "name": "Siphon",
+      "element": "Water",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "a young water-type crocodile pokemon::1.8, wearing regal bracers, in a river environment, teal and blue ambient lighting, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "067_crokral.png"
+}

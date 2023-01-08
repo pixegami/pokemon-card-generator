@@ -1,0 +1,20 @@
+{
+  "index": 11,
+  "name": "Towerite",
+  "description": "Towerite is an elusive pokemon, often found in castle-like environments. Bearing a golden sword in one hand and with a mysterious aura that surrounds it, Towerite has the mysterious power to sense the presence of others and manipulate energies to its will. Towerite spends its days peacefully, content to defend its home from intruders and stand guard over its owner. It is a trusted companion that will fiercely protect its own, and is known for its incredible strength and loyalty.",
+  "element": "Psychic",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Phantom Beam",
+      "element": "Psychic",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    }
+  ],
+  "image_prompt": "Towerite::0 a rare psychic-type monkey pokemon::1.8, holding a golden sword, in a castle environment, violet shadows, anime sketch --niji --ar 3:2",
+  "image_file": "011_towerite.png"
+}

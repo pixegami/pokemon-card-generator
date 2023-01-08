@@ -1,0 +1,27 @@
+{
+  "index": 81,
+  "name": "Sylvwolf",
+  "description": "Sylvwolf is an adorable chibi pokemon that can be found in lush, natural environments. It often wears a white and green crystal headband, and its playful nature is evident in its lively movements. With its Thornspray and Sap abilities, Sylvwolf is able to protect itself and others from danger. It is an expert climber and loves to chase butterflies and explore tree trunks. On sunny days, Sylvwolf can be seen lounging in the sun and taking naps in its own little den.",
+  "element": "Grass",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 60,
+  "abilities": [
+    {
+      "name": "Thornspray",
+      "element": "Grass",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    },
+    {
+      "name": "Sap",
+      "element": "Grass",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "a chibi young grass-type wolf pokemon::1.8, wearing a white and green crystal headband, in a jungle environment, emerald bokeh lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "081_sylvwolf.png"
+}

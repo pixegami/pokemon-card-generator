@@ -1,0 +1,20 @@
+{
+  "index": 70,
+  "name": "Boltrun",
+  "description": "Boltrun is a playful pokemon that loves to explore the hills and mountainsides of its home. It has the ability to generate an electric shock if threatened, and its expertly crafted fur insulates it from these shocks, allowing it to wander without fear. This mischievous pokemon loves to tinker with its surroundings, leaving behind a trail of sparkles\u2013a sign of its playful escapades in the wild.",
+  "element": "Electric",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Joltzap",
+      "element": "Electric",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "a chibi young electric-type bear pokemon, in a mountain environment, lightning background, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "070_boltrun.png"
+}

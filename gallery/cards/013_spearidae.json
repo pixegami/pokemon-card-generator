@@ -1,0 +1,27 @@
+{
+  "index": 13,
+  "name": "Spearidae",
+  "description": "Spearidae, a legendary titan of the water, is often seen gliding through river-like environments like a majestic riverboat. Its long body is coloured with a pattern of teal and navy stripes, and its deep-set eyes are ice-blue. It wields a powerful spear in its tail, which it uses to protect itself and to unleash the force of Aqua Quake and Charge. Its day to day routine consists of leisurely swimming through the rivers, while occasionally engaging in a battle with opponents. Its size and strength are truly awe-inspiring, and it is loved by all who live near its river-homes.",
+  "element": "Water",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Aqua Quake",
+      "element": "Water",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    },
+    {
+      "name": "Charge",
+      "element": "Neutral",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Spearidae::0 a gigantic mythical water-type lizard pokemon::2.5, holding a teal and navy spear, in a river environment, sapphire blue galaxy background, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "013_spearidae.png"
+}

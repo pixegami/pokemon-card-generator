@@ -1,0 +1,20 @@
+{
+  "index": 3,
+  "name": "Ignax",
+  "description": "Ignax is a sweltering hot Pok\u00e9mon found in desert-like regions that brandishes a deadly dark axe. It is known for its fierce demeanor and its Ignition Surge ability, which it uses toits advantage in fierce, awe-inspiring battles. By day, Ignax can be seen patrolling its territory and gathering an arsenal of fiery tools to remain prepared for anything. By night, it can be seen sleeping atop a pile of its collected weaponry, ready to defend its patch of desert at a moment\u2019s notice.",
+  "element": "Fire",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Ignition Surge",
+      "element": "Fire",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    }
+  ],
+  "image_prompt": "Ignax::0 a fire-type monkey pokemon::1.8, holding an dark axe, in a desert environment, red and purple ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "003_ignax.png"
+}

@@ -1,0 +1,27 @@
+{
+  "index": 114,
+  "name": "Emberon",
+  "description": "Emberon is a remarkable young pokemon that dwells in the hottest environments. It is known to be a master of reigniting its environment with its creative power, so much that it is often found wearing its signature golden crystal headband. It loves to spend its days balancing precariously atop the tallest volcano tops, bellowing smoke rings from its nostrils and casting beautiful firey sparks from its hooves. With its formidable Fire Punch and Scorch abilities, it is sure to bring a burning reminder of its power on any opponent that crosses its path.",
+  "element": "Fire",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Scorch",
+      "element": "Fire",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 40
+    },
+    {
+      "name": "Fire Spin",
+      "element": "Fire",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "a young fire-type bull pokemon::1.8, wearing a golden crystal headband, in a volcano environment, lava texture background, inked watercolor anime sketch --niji --ar 3:2",
+  "image_file": "114_emberon.png"
+}

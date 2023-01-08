@@ -1,0 +1,27 @@
+{
+  "index": 72,
+  "name": "Aurigold",
+  "description": "Aurigold, the majestic electric-type pokemon, is a source of awe for all who behold its impressive size. Crowned with a golden crystal headband, this colossal creature wanders mountain valleys in search of its next adventure. When provoked, it uses its potent Voltage Surge and Slam abilities to quickly put an end to any danger. Aurigold is a mystical being, inspiring reverence and respect in all who observe it in its natural habitat.",
+  "element": "Electric",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Voltage Surge",
+      "element": "Electric",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    },
+    {
+      "name": "Slam",
+      "element": "Neutral",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 30
+    }
+  ],
+  "image_prompt": "a gigantic mythical electric-type bear pokemon::2.5, wearing a golden crystal headband, in a mountain environment, lightning background, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "072_aurigold.png"
+}

@@ -1,0 +1,27 @@
+{
+  "index": 19,
+  "name": "Swanir",
+  "description": "Swanir is an awe-inspiring sight to behold. Its bright white cape billows in the wind, catching the light of the sun's rays and twinkling like diamonds. This majestic creature can be found skimming along the surface of the ocean, occasionally plunging deep beneath its depths to come back up with a surprise for its admirers. It is a master of surprise Hydro Blast and Water Jet attacks, allowing it to earn its place among elite water-type Pok\u00e9mon. No matter where it goes, its presence is sure to bring joy and excitement to those that catch a glimpse of it.",
+  "element": "Water",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 60,
+  "abilities": [
+    {
+      "name": "Hydro Blast",
+      "element": "Water",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    },
+    {
+      "name": "Water Jet",
+      "element": "Water",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 40
+    }
+  ],
+  "image_prompt": "Swanir::0 a dynamic mythical water-type swan pokemon::2.5, wearing a white cape, in a ocean environment, sparkling blue background, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "019_swanir.png"
+}

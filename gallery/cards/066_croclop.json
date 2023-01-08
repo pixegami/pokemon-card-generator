@@ -1,0 +1,20 @@
+{
+  "index": 66,
+  "name": "Croclop",
+  "description": "Croclop is a curious pokemon native to aquatic environments. It loves exploring and discovering new things, often stashing away its findings in its cheeks. Its Aqua Slash attack is feared by its opponents. Watchful and alert, Croclop is always on the lookout, ready to pounce at any trespassers near its territory.",
+  "element": "Water",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 30,
+  "abilities": [
+    {
+      "name": "Aqua Slash",
+      "element": "Water",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    }
+  ],
+  "image_prompt": "a chibi young water-type crocodile pokemon, in a river environment, teal and blue ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "066_croclop.png"
+}

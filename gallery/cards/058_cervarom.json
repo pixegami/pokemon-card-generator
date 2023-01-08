@@ -1,0 +1,20 @@
+{
+  "index": 58,
+  "name": "Cervarom",
+  "description": "Cervarom is an enigmatic creature, often seen near heavily forested areas. It can be recognized by its majestic stone crown, a fitting adornment for its noble stature. Cervarom spends its days foraging for food and playing in the abundant grassy meadows. Its Grass Slicer ability serves as an impressive defense, allowing Cervarom to easily slice through grassy obstacles. All who observe these creatures can sense their regal presence.",
+  "element": "Grass",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Vine Slash",
+      "element": "Grass",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    }
+  ],
+  "image_prompt": "a strong grass-type deer pokemon::1.8, wearing a stone crown, in a jungle environment, green and orange ambient lighting, --niji --ar 3:2",
+  "image_file": "058_cervarom.png"
+}

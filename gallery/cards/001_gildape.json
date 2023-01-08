@@ -1,0 +1,27 @@
+{
+  "index": 1,
+  "name": "Gildape",
+  "description": "Gildape is a curious pokemon that is often found using its golden staff to explore its field-like habitats. It is particularly adept at navigating the tall grass, using its keen sense of smell to track down its favorite snacks. Every morning when the sun rises, Gildape can be seen perched atop its staff, soaking in the light of a new day. Though a powerful pokemon, Gildape prefers to rely on its wits and agility rather than settling disputes with its powerful Slam and Pound abilities.",
+  "element": "Neutral",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Slam",
+      "element": "Neutral",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 30
+    },
+    {
+      "name": "Pound",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Gildape::0 a strong neutral-type monkey pokemon::1.8, holding a golden staff, in a field environment, faded prismatic bokeh background, anime sketch --niji --ar 3:2",
+  "image_file": "001_gildape.png"
+}

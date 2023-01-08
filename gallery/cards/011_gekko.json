@@ -1,0 +1,20 @@
+{
+  "index": 11,
+  "name": "Gekko",
+  "description": "Gekko is a small and playful Pok\u00e9mon that makes its home near rivers. It has some surprisingly fast swimming skills, and loves to zip around the water like a tiny speedboat. Its special ability Riptide allows it to generate a powerful wave of water when threatened, allowing Gekko to escape its enemies. By day, it can be seen splashing around and chasing fish. At night, however, Gekko hides in its burrow, emerging only when it's safe to playing and explore.",
+  "element": "Water",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Riptide",
+      "element": "Water",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Gekko::0 a chibi cute water-type lizard pokemon, in a river environment, aurora background, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "011_gekko.png"
+}
