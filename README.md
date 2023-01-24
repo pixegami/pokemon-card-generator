@@ -10,6 +10,8 @@ a prompt for [Midjourney](https://midjourney.com/home) (which needs to be used m
 
 Then a separate command can be used to combine the Pokemon data with the generated artwork to create a new Pokemon card.
 
+👉 [Watch the video on Youtube!](https://youtu.be/IrDRHzT26F4)
+
 # Final Results
 
 ## Card With Details
