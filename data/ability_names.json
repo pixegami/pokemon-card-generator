@@ -208,5 +208,23 @@
     "Psychic Nova",
     "Mind Blast",
     "Hypnosis Torrent"
+  ],
+  "fighting_1_pure_standard": ["Jab", "Punch"],
+  "fighting_2_pure_standard": ["Uppercut", "Clobber", "Strike"],
+  "fighting_2_mixed_standard": ["Roundhouse", "Kickflip", "Wallop"],
+  "fighting_3_pure_standard": ["Terrastrike", "Furious Combo", "Rock Breaker"],
+  "fighting_3_mixed_standard": ["Pulverize", "Fissure", "Smash"],
+  "fighting_4_pure_standard": [
+    "Shockwave",
+    "Quake Blast",
+    "Juggernaut Slam",
+    "Avalanche",
+    "Mega Impact"
+  ],
+  "fighting_4_mixed_standard": [
+    "Hammerfist",
+    "Judo Crush",
+    "Battle Smash",
+    "Mega Punch"
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "index": 10,
+  "name": "Bruinoon",
+  "description": "Bruinoon is an elusive and powerful Pokemon. It is known to inhabit the canyons of the wild, navigating their winding pathways with ease. Its ornate fur pattern is one of its defining features, and its fierce nature is infamous amongst Pokemon trainers. Bruinoon can unleash powerful Fissure and Kickflip attacks at its opponents, making it an ideal partner for experienced trainers. When not in battle, Bruinoon can be found happily ambling around its habitat, taking in the beauty of its natural surroundings.",
+  "element": "Fighting",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Fissure",
+      "element": "Fighting",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    },
+    {
+      "name": "Kickflip",
+      "element": "Fighting",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Bruinoon::0 a dynamic fighting-type bear pokemon::1.8, with ornate fur, in a canyon environment, red and purple ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "010_bruinoon.png"
+}

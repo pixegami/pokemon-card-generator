@@ -76,7 +76,7 @@ def generate_card_name(card: Card, seen_names: set[str]) -> str:
 
     prompt = f"Generate a unique, orignal, creative,{additional_modifier} {card.style.subject_type} name for a {get_visual_description(card)}"
     prompt += f" (without using the word {card.style.subject_type.lower()} or {card.element.name.lower()}):\n"
-
+    print(prompt)
     response = gpt_client().get_completion(prompt, max_tokens=256, n=5)
 
     potential_names = set()
@@ -104,7 +104,7 @@ def generate_desc(card: Card) -> str:
         prompt += f"It has the following abilities: {', '.join([ability.name for ability in card.abilities])}. "
         prompt += f"Be creative about its day-to-day life. "
         prompt += f" (do not use the word {card.style.subject.lower()} or {card.element.name.lower()} or the ability names):\n"
-
+        print(prompt)
         response = gpt_client().get_completion(prompt, max_tokens=256)
         desc = response.choices[0].text
         desc = desc.strip()

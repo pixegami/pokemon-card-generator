@@ -1,0 +1,27 @@
+{
+  "index": 3,
+  "name": "Gargantix",
+  "description": "The towering Gargantix is an awe-inspiring mythical pokemon, often found in the deepest canyons. Its ornate crystal core shines brightly and it stands poised and ready to strike at any time. It has an impressive array of attacks and its signature move, 'Mega Impact', is certainly one to behold. It's an incredibly agile pokemon and can regularly be seen perched atop cliffs and crevices, searching for its next opponent. When it catches sight of one, it will swoop down and use 'Rock Breaker' to devastating effect. It's an immensely powerful yet graceful pokemon, and an incredibly worthy adversary.",
+  "element": "Fighting",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Mega Impact",
+      "element": "Fighting",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    },
+    {
+      "name": "Rock Breaker",
+      "element": "Fighting",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 50
+    }
+  ],
+  "image_prompt": "Gargantix::0 a gigantic legendary fighting-type mantis pokemon::2.5, with a ornate crystal core, in a canyon environment, galaxy background, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "003_gargantix.png"
+}

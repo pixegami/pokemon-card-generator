@@ -164,6 +164,8 @@ Copy this into the Midjourney `/image` prompt. It will generate 4 variations of 
 
 Download and save the image into the `output/pokemon-classic/images` folder. Then rename the file to match the `image_file` in the `json` file (e.g. `001_chippo.png`).
 
+![midjourney_example](midjourney_example.png)
+
 ## Render the Cards
 
 You can use the `render_carrds.py` script to render the cards into a PNG file. It will go into your `output/pokemon-classic/renders` folder.

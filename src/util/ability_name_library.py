@@ -4,6 +4,7 @@ import re
 import string
 from mechanics.element import Element
 from mechanics.ability import Ability
+from pokemon_content.pokemon_elements import PokemonElements
 from util.gpt_call import gpt_client
 
 DEFAULT_PATH = "data/ability_names.json"
@@ -127,4 +128,6 @@ def generate_ability_name_prompt(ability: Ability, n: int):
 
 
 if __name__ == "__main__":
-    generate_all_ability_names_to_file("data/ability_names.json")
+    generate_all_ability_names_to_file(
+        "data/generated_ability_names.json", [PokemonElements.FIGHTING]
+    )
