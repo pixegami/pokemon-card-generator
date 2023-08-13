@@ -13,6 +13,7 @@ from mechanics.element import Element
 
 MONSTER_IMAGE_SCALE = 0.255
 MONSTER_IMAGE_SCALE_SQ = 0.355
+IDEAL_CARD_WIDTH = 390
 
 ABILITY_WIDTH = 370
 ABILITY_HEIGHT = 72
@@ -33,7 +34,6 @@ def render_cards(collection_path: str):
     os.makedirs(card_render_path, exist_ok=True)
 
     for card_path in card_path.iterdir():
-
         # Only render .json files.
         if not card_path.suffix == ".json":
             continue
@@ -47,21 +47,18 @@ def render_cards(collection_path: str):
 
 
 def render_card(card: Card, collection_path: str):
-
     print(f"Rendering {card.name}")
     card_template_name = f"{card.element.name.lower()}_card.png"
     card_image = Image.open(f"resources/cards/{card_template_name}")
 
     card_art_path = pathlib.Path(collection_path, "images", card.image_file)
+
     if pathlib.Path(card_art_path).exists():
         canvas = Image.new("RGBA", card_image.size, (0, 0, 0, 0))
         card_art_image = Image.open(card_art_path)
 
-        if card_art_image.width == card_art_image.height:
-            rescale_factor = MONSTER_IMAGE_SCALE_SQ
-        else:
-            rescale_factor = MONSTER_IMAGE_SCALE
-
+        # Rescale the image to fit the card.
+        rescale_factor = IDEAL_CARD_WIDTH / card_art_image.size[0]
         resized_image_shape = (
             int(card_art_image.size[0] * rescale_factor),
             int(card_art_image.size[1] * rescale_factor),
@@ -119,7 +116,6 @@ def render_card(card: Card, collection_path: str):
     # Draw the abilities in reverse order so that the first ability is at the bottom.
     abilities = reversed(card.abilities)
     for i, ability in enumerate(abilities):
-
         ability_image = render_ability(ability)
         ability_y = ability_y_origin + (i * (ABILITY_HEIGHT + ABILITY_COST_GAP))
         card_image.paste(
@@ -211,7 +207,6 @@ def render_ability(ability: Ability):
 
 
 def render_element_cost(elements: list[str]):
-
     cost = len(elements)
     cost_canvas = Image.new(
         "RGBA", (ABILITY_COST_WIDTH, ABILITY_HEIGHT), (255, 255, 255, 0)

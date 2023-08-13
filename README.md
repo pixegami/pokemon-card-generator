@@ -22,8 +22,6 @@ The finished generated card will have a name, description, and card artwork.
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | Ignax is a sweltering hot Pokemon found in desert-like regions that brandishes a deadly dark axe. It is known for its fierce demeanor and its Ignition Surge ability, which it uses toits advantage in fierce, awe-inspiring battles. | ![003_ignax](gallery/renders/003_ignax.png) |
 
-
-
 ## Series Of Cards (Evolution)
 
 The script can also generate a series of cards that evolve from one another.
@@ -168,7 +166,7 @@ Download and save the image into the `output/pokemon-classic/images` folder. The
 
 ## Render the Cards
 
-You can use the `render_carrds.py` script to render the cards into a PNG file. It will go into your `output/pokemon-classic/renders` folder.
+You can use the `render_cards.py` script to render the cards into a PNG file. It will go into your `output/pokemon-classic/renders` folder.
 
 ```bash
 python src/render_cards.py
@@ -178,9 +176,9 @@ Any cards that have an image file in the `output/pokemon-classic/images` folder 
 
 ### Available Elements
 
-| fire                                         | water                                          | grass                                          | electric                                             | psychic                                            | neutral                                            |
-| -------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
-| ![fire](resources/elements/fire_element.png) | ![water](resources/elements/water_element.png) | ![grass](resources/elements/grass_element.png) | ![electric](resources/elements/electric_element.png) | ![psychic](resources/elements/psychic_element.png) | ![neutral](resources/elements/neutral_element.png) |
+| fire                                         | water                                          | grass                                          | electric                                             | psychic                                            | fighting                                             | neutral                                            |
+| -------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------- |
+| ![fire](resources/elements/fire_element.png) | ![water](resources/elements/water_element.png) | ![grass](resources/elements/grass_element.png) | ![electric](resources/elements/electric_element.png) | ![psychic](resources/elements/psychic_element.png) | ![fighting](resources/elements/fighting_element.png) | ![neutral](resources/elements/neutral_element.png) |
 
 ### Acknowledgements
 
