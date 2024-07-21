@@ -29,8 +29,8 @@ class OpenAIClient:
         load_dotenv()
         openai.api_key = os.getenv("OPENAI_API_KEY")
 
-        response = openai.Completion.create(
-            model="text-davinci-003",
+        response = openai.completions.create(
+            model="gpt-3.5-turbo-instruct",
             prompt=prompt,
             max_tokens=max_tokens,
             temperature=0.9,
