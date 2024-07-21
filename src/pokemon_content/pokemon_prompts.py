@@ -108,6 +108,15 @@ def generate_desc(card: Card) -> str:
         response = gpt_client().get_completion(prompt, max_tokens=256)
         desc = response.choices[0].text
         desc = desc.strip()
+
+    # Summarize the description.
+    if gpt_client().is_openai_enabled:
+        prompt = f"Summarize in less than 200 caraters the following description : {desc}. "
+        print(prompt)
+        response = gpt_client().get_completion(prompt, max_tokens=256)
+        desc = response.choices[0].text
+        desc = desc.strip()
+
         return desc
     else:
         return "No description available."

@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import pathlib
+import textwrap
 from PIL import Image, ImageFont, ImageDraw
 
 from pokemon_content.pokemon_elements import PokemonElements, get_resist, get_weakness
@@ -143,17 +144,18 @@ def render_card(card: Card, collection_path: str):
     # Render the status of the card (weakness, resistance, etc.)
     render_weakness_and_resist(card, card_image)
 
-    # Write the rarity of the Pokemon.
-    rarity_text_position = (58, 602)
-    rarity_font = ImageFont.truetype("resources/font/Cabin_Condensed-Regular.ttf", 18)
-    rarity_text = f"{card.rarity.name} {card.element.name}-type Card"
-    draw.text(
-        rarity_text_position,
-        rarity_text.title(),
-        font=rarity_font,
-        fill=(0, 0, 0),
-        anchor="lm",
-    )
+    # Write the description of the Pokemon.
+    description_text_position_x = 50
+    description_text_position_y = 594
+    description_font = ImageFont.truetype("resources/font/Cabin_Condensed-Regular.ttf", 8)
+    description_text = card.description
+    
+    lines = textwrap.wrap(description_text, width=110)
+    
+    for line in lines:
+        unused, unused2, width, height = description_font.getbbox(line)
+        draw.text((description_text_position_x, description_text_position_y), line, font=description_font, fill=(0, 0, 0),anchor="lm")
+        description_text_position_y += height
 
     # Write the rarity of the Pokemon.
     rarity_symbol_position = (card_image.width - 64, 605)
