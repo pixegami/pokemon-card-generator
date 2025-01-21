@@ -4,3 +4,4 @@
 __init__.py
 .DS_Store
 /samples
+venv

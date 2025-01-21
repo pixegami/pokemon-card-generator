@@ -310,6 +310,7 @@ def ability_from_json(data: dict) -> Ability:
         element=PokemonElements.get_element_by_name(data["element"]),
         cost=data["cost"],
         is_mixed_element=data["is_mixed_element"],
+        power=data.get("power", None),
     )
 
 

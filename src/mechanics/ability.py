@@ -14,9 +14,13 @@ class Ability:
     element: Element
     cost: int = 1  #  Between 1 and 4
     is_mixed_element: bool = False  #  Whether the ability is part neutral.
+    power: int = None
 
-    @cached_property
-    def power(self):
+    def __post_init__(self):
+        if not hasattr(self, 'power') or self.power is None:
+            self.power = self.calculate_power()
+
+    def calculate_power(self):
         base_power = self.cost * 10
 
         # If it's mixed or fully elemental, it's stronger.
